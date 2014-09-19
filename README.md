@@ -9,3 +9,7 @@ Setup
 1. Make sure cache.txt is writable
 2. Enter your Twitter API key and secret in config.php
 
+License
+-------
+[Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/) - do what you want.
+
