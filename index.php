@@ -65,6 +65,7 @@ foreach ($ppeuParties as $partyCC) {
 		$parties[$partyCC] = array(
 			"cc" => $partyCC,
 			"fbPop" => $fbPop,
+			"fbId" => $fbId,
 			"twitterId" => $twitterId
 		);
 	}
@@ -98,8 +99,16 @@ foreach ($parties as $party) {
 
 	echo tableRow(array(
 		$party['cc'],
-		$party['fbPop'],
-		$party['twitterPop'],
+		'<a href="https://facebook.com/profile.php?id='
+			.$party['fbId']
+			.'">'
+			.$party['fbPop']
+			.'</a>',
+		'<a href="https://twitter.com/'
+			.$party['twitterId']
+			.'">'
+			.$party['twitterPop']
+			.'</a>',
 		$pop,
 		round($fbPer100k),
 		round($twitterPer100k),
